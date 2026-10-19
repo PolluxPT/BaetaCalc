@@ -2,6 +2,8 @@
 
 <img src="assets/BaetaCalc.png" alt="BaetaCalc logo" width="240">
 
+[⬇ Descarregar / Download](https://github.com/PolluxPT/BaetaCalc/releases/latest)
+
 **Scientific and graphing calculator for the RGDS+ running Linux Stock OS.**
 
 [Português](README.md) · [English manual](docs/MANUAL_EN.txt) · [Build](docs/BUILD.md) · [MIT license](LICENSE)
