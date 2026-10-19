@@ -3,6 +3,7 @@
 <img src="assets/BaetaCalc.png" alt="BaetaCalc logo" width="240">
 
 [⬇ Descarregar / Download](https://github.com/PolluxPT/BaetaCalc/releases/latest)
+
 **Calculadora científica e gráfica para a RGDS+ com Linux Stock OS.**
 
 [English](README_EN.md) · [Manual PT](docs/MANUAL_PT.txt) · [Compilação / Build](docs/BUILD.md) · [Licença MIT](LICENSE)
