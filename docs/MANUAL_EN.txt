@@ -1,0 +1,119 @@
+BaetaCalc 2.5 final — RGDS+ — PT / EN
+18 October 2026
+
+INSTALL / UPDATE
+Copy BaetaCalc.sh and the BaetaCalc folder from APPS into Roms/APPS.
+Overwrite existing files without deleting the application folder first.
+Existing state.txt, advanced.txt and language.txt are preserved; back them up.
+BaetaCalc_Arranque.txt stays inside BaetaCalc and is replaced at each launch.
+
+NAVIGATION
+The home screen contains LANGUAGE, CALCULATOR, FUNCTIONS and EQUATIONS,
+plus a small EXIT button at the bottom right.
+HOME and EXIT stay in the same position in every working environment.
+EXIT asks for confirmation. Language selection is saved.
+
+CALCULATOR
+NORMAL / SCIENTIFIC switches keyboard styles. Scientific mode has three full
+panels: NUMBERS, FUNCTIONS / X Y Z and SPECIAL. SPECIAL contains the three
+hyperbolic functions and floor, ceil, round. The gray box is the editable input.
+Arrows move the cursor; up/down jump to the start/end. C clears; DEL deletes
+before the cursor; = evaluates. Multiplication is ×; the variable is uppercase X.
+
+FUNCTIONS
+Select F1–F6 directly, then tap the expression card to edit it.
+Choose Y=f(X) or X=f(Y); switching exchanges X and Y in the expression.
+Examples: Y=X^2, Y=3 (horizontal), X=1 (vertical), X=sin(Y).
+X, Y and Z are available on the keyboard; graphing remains two-dimensional.
+The editor offers full NUMBERS and FUNCTIONS panels, NEXT FIELD and DONE.
+Graph, table, roots and window controls are on the functions panel.
+Shading controls are on the GRAPH panel, including equation graphs.
+Equation shading is temporary and separate from saved function shading.
+For implicit equations, LHS <= RHS / LHS >= RHS compare their two sides.
+TRACE displays the expression, or the original equation for systems.
+Basic operators are aligned in NUMBERS; equality is neutral in equation
+editors and SOLVE is green. FUNCTIONS / X Y Z has no basic operators;
+= replaces Ans on its bottom row, with C and DEL together; Ans is in NUMBERS.
+Shading intersects all enabled conditions: below/above Y=f(X), or left/right
+of X=f(Y). Unshaded functions remain visible without constraining the region.
+Example: shade below Y=X^2, above Y=0, right of X=0 and left of X=1.
+The shaded area is sampled inside the window; its area is not calculated.
+
+EQUATIONS
+Choose a method, then tap a field directly to edit it. NEXT FIELD moves to
+another field; DONE returns to the method panel. In equation fields, = inserts
+an equality. Use SOLVE on the method panel to calculate.
+BACK TO TYPES returns to the method chooser. Use decimal points.
+2X+Y=-9 is accepted; use X*Y for variable products, not XY.
+Polynomials: degrees 1–6, coefficients from highest power to constant.
+The full polynomial appears below the coefficient fields and above its roots.
+Example: 1, -3, 2 represents X^2-3X+2, with roots 1 and 2.
+Real and complex roots are numerical; real roots can be plotted.
+Quadratics with integer coefficients and positive nonsquare discriminants
+show the simplified radical form before numerical roots; for example
+X^2+2X-1=0 gives X=-1 ± √2. General symbolic solving is not implemented.
+Equation in X: a general equation and search interval; up to 16 real roots.
+The numerical search may miss roots in difficult cases.
+Linear systems: two or three variables, one equation per field. Distinguishes
+unique, infinite and inconsistent solutions with numerical tolerances.
+Example: 2X+Y=-9 and Y=2X gives X=-2.55, Y=-4.5.
+Nonlinear systems: two equations and initial X/Y guesses; finds one nearby
+solution if it converges. Other solutions may exist; failure is not proof
+that no solution exists. Solver graphs preserve the six stored functions.
+Graphing supports two variables; there is no 3D or symbolic algebra.
+
+DECIMAL / FRACTION
+The a/b button shows fractions only when the application can confirm them.
+Bounded integer rational arithmetic checks supported expressions rather than
+approximating their numerical result: 2/3, -2.25 -> -9/4, 0.1+0.2 -> 3/10.
+Supports basic arithmetic, bounded integer powers/factorials and square roots
+of perfect rational squares. Exact real radicals are also derived from the original expression:
+sqrt(2) -> √2; sqrt(8) -> 2√2; sqrt(8)*sqrt(5) -> 2√10;
+sqrt(5^2+7^2) -> √74; 1/sqrt(2) -> √2/2.
+Combines like radicals and rationalizes one- or two-term denominators.
+For example sqrt(8)+sqrt(18) -> 5√2 and 1/(1+sqrt(2)) -> -1+√2.
+Ans preserves the exact form during the session. The = key on the functions
+keyboard evaluates in calculator mode and inserts equality in equation fields.
+Bounded to eight radical terms, limited integers/operations and a fixed
+factorization budget. Unsupported nested radicals, functions or oversized
+expressions remain decimal. This is not a general computer algebra system.
+For equation results, candidate fractions must satisfy the original data
+exactly under this rational verification. No approximate fractions are shown.
+Unsupported exact forms stay decimal, with up to 17 significant digits; decimal
+representations remain numerical approximations. Internal floating-point
+values are not changed. Exact Ans metadata lasts for the current session,
+including suspend, but is not restored from earlier sessions.
+In equation panels a/b is at the top; BACK TO TYPES spans the bottom width.
+
+CONTROLS
+A activates a selected button; START confirms/evaluates according to context.
+B deletes in the editor/calculator, and goes back in overview panels.
+D-pad navigates buttons, or pans the graph. L/R zoom the graph.
+Editor arrows move the cursor; TRACE arrows step through points.
+Y swaps screens. L2+R2 clears all mathematical memory, including functions,
+shading and equations, without exiting; the language setting is retained.
+WINDOW edits X/Y bounds and the table step. Next function changes F1–F6.
+A short POWER press requests system suspend after saving data. Press POWER
+again to wake and resume. Power inputs are detected separately from gamepad
+inputs; firmware power management is enabled and kernel sleep states are used.
+Failures are recorded in the single startup log. Suspend/resume requires
+hardware testing on the RGDS+; it has not been validated on the console.
+
+STARTUP
+The home menu is rendered before joystick initialization. Windows are created
+fullscreen directly and rounded-button rendering uses fewer draw calls.
+The startup log includes time to the first displayed screen.
+
+VALIDATION
+Mathematical, navigation, PT/EN, persistence, button-boundary and overlap tests,
+and rendered screens checked on a computer. ARM64 binary included.
+The redesigned navigation still needs testing on the console.
+Source and tests are in Sources; font license accompanies the application.
+
+FINAL RELEASE 2.5
+Includes exact radicals and all changes from 2.4. Tests cover simplification,
+rationalization, Ans and 5000 radical identities. No external symbolic dependency.
+
+LOGÓTIPO / LOGO
+APPS/Imgs/BaetaCalc.png — copie também Imgs para Roms/APPS.
+Copy Imgs into Roms/APPS as well. Preserve other applications' images.

@@ -1,0 +1,5 @@
+#define main app_main
+#include "baetacalc.c"
+#undef main
+#include <assert.h>
+int main(void){snprintf(statepath,sizeof(statepath),"test-state.txt");homeScreen=0;mode=0;coreAction(42);append("2");coreAction(27);append("3");enter();assert(ans==6);assert(histcount==1);enter();assert(histcount==1);coreAction(39);append("4");assert(!strcmp(expr,"Ans+4"));enter();assert(ans==10);append("7");assert(!strcmp(expr,"7"));append("8");arrows(-1,0);append("9");assert(!strcmp(expr,"798"));coreAction(40);assert(!strcmp(expr,"78"));char show[128];pretty("2*x+X/3",show,sizeof(show));assert(!strcmp(show,"2×X+X÷3"));double v;assert(evaluate84("2*X",4,0,0,&v)&&v==8);setting=-1;mode=0;scientific=0;buildlayout();assert(keycount==29);scientific=1;buildlayout();assert(keycount==32);for(int i=0;i<keycount;i++)assert(layout[i].id!=44&&layout[i].id!=45);char old[512];strcpy(old,expr);coreAction(47);coreAction(42);append("-20");enter();assert(xmin==-20&&!strcmp(expr,old));save();xmin=-10;expr[0]=0;load();assert(xmin==-20&&!strcmp(expr,old));puts("Edição, continuidade, símbolos, layouts e persistência: PASS");remove(statepath);}

@@ -1,0 +1,146 @@
+BaetaCalc 2.5 final — RGDS+ — PT / EN
+18 de outubro de 2026
+
+INSTALAÇÃO / ATUALIZAÇÃO
+Copie BaetaCalc.sh e a pasta BaetaCalc, de APPS, para Roms/APPS.
+Substitua os ficheiros, sem apagar previamente a pasta da aplicação.
+O pacote não inclui dados pessoais: state.txt, advanced.txt e language.txt
+existentes são preservados. Faça uma cópia desses ficheiros como segurança.
+O relatório BaetaCalc_Arranque.txt fica dentro de BaetaCalc e é substituído
+em cada arranque, sem acumular relatórios.
+
+NOVA NAVEGAÇÃO
+A entrada tem IDIOMA, CALCULADORA, FUNÇÕES e RESOLVER EQUAÇÕES,
+com um botão SAIR pequeno no canto inferior direito.
+INÍCIO e SAIR mantêm a mesma posição nos ambientes de trabalho.
+SAIR pede confirmação. O idioma escolhido fica guardado.
+
+CALCULADORA
+NORMAL / CIENTÍFICA alterna os teclados. No científico há painéis
+completos NÚMEROS, FUNÇÕES / X Y Z e ESPECIAIS. A página ESPECIAIS contém
+sinh, cosh, tanh, Arr. Defeito, Arr. Excesso e Arr. Inteiro. O campo cinzento é a expressão em
+edição. As setas movem o cursor; cima/baixo vão ao início/fim do campo.
+A multiplicação aparece como × e a variável como X maiúsculo.
+Em NÚMEROS, os operadores ficam alinhados na coluna direita; no editor
+de equações, = insere a igualdade e não tem destaque verde.
+FUNÇÕES / X Y Z agrupa as funções em quatro filas, sem operadores básicos;
+= fica na última fila, com C e DEL juntos; Ans está em NÚMEROS. RESOLVER tem destaque verde.
+C limpa o campo; DEL apaga antes do cursor; = calcula.
+
+FUNÇÕES
+Escolha diretamente F1 a F6. Toque no cartão da expressão para editar.
+Escolha Y=f(X) ou X=f(Y); ao trocar, X e Y na expressão são permutados.
+Exemplos: Y=X^2, Y=3 (horizontal), X=1 (vertical), X=sin(Y).
+O teclado disponibiliza X, Y e Z; os gráficos continuam em duas dimensões.
+O editor tem os painéis NÚMEROS e FUNÇÕES / X Y Z, PRÓXIMO e CONCLUÍDO.
+GRÁFICO, TABELA, ZEROS e JANELA ficam no painel das funções.
+O sombreado escolhe-se no painel GRÁFICO, por função selecionada.
+Também está disponível nos gráficos das equações, com sombra temporária
+separada das funções guardadas. Nas curvas implícitas: ME <= MD e ME >= MD
+comparam o membro esquerdo com o direito da equação introduzida.
+TRACE mostra a expressão da função, além das coordenadas.
+Nos sistemas, mostra a equação original introduzida.
+
+SOMBREADO
+Cada função pode ficar sem sombra, abaixo/esquerda ou acima/direita.
+Y=: abaixo significa Y<=f(X); acima significa Y>=f(X).
+X=: esquerda significa X<=f(Y); direita significa X>=f(Y).
+A região pintada satisfaz TODAS as condições ativas, dentro da janela.
+Por exemplo, Y=X^2 abaixo, Y=0 acima, X=0 direita e X=1 esquerda
+pintam a região entre a parábola e o eixo horizontal, de X=0 a X=1.
+Funções sem sombra continuam a ser desenhadas, sem limitar a pintura.
+Não se calcula a área; a região pode ser aberta e é amostrada no ecrã.
+
+RESOLVER EQUAÇÕES
+Escolha o método e toque diretamente no campo a editar.
+Use PRÓXIMO para outro campo e CONCLUÍDO para voltar ao painel.
+Em equações, = insere a igualdade. RESOLVER calcula no painel do método.
+VOLTAR AOS TIPOS regressa à escolha do método, sem passar pelo gráfico.
+Aceita 2X+Y=-9; use X*Y para produtos entre variáveis, não XY.
+Use ponto decimal. Ans é o último resultado da calculadora.
+
+POLINÓMIOS: graus 1 a 6. Introduza coeficientes da maior potência até X^0.
+O polinómio completo aparece abaixo dos campos e antes das raízes.
+X^2-3X+2: coeficientes 1, -3, 2; raízes 1 e 2.
+Apresenta raízes reais e complexas numéricas, incluindo multiplicidades.
+Quadráticas com coeficientes inteiros e discriminante positivo não quadrado
+mostram primeiro a forma radical simplificada e depois os valores numéricos.
+Exemplo: X^2+2X-1=0 mostra X=-1 ± √2.
+Não existe um motor simbólico geral para todos os graus.
+Coeficiente inicial zero reduz o grau. O gráfico marca as raízes reais.
+EQUAÇÃO EM X: introduza equação e intervalo; exemplo X^2-4=0, -5, 5.
+Procura até 16 zeros reais; não garante encontrar todos em casos difíceis.
+SISTEMA LINEAR: duas ou três variáveis. Uma equação por campo.
+O exemplo 2X+Y=-9 e Y=2X dá X=-2.55 e Y=-4.5.
+Distingue solução única, infinitas soluções e sistema impossível com
+uma tolerância numérica. O gráfico suporta sistemas de duas variáveis.
+SISTEMA NÃO LINEAR: duas equações e valores iniciais de X e Y.
+Procura uma solução perto desses valores; outras podem existir.
+Falha de convergência não prova ausência de solução.
+Os gráficos das equações são temporários e preservam as seis funções.
+Não há vista 3D nem álgebra simbólica.
+
+DECIMAL / FRAÇÃO
+O botão a/b mostra uma fração apenas quando a aplicação a consegue confirmar.
+As operações racionais suportadas são verificadas com inteiros, sem procurar
+uma fração aproximada do resultado. Exemplos: 2/3, -2.25 -> -9/4,
+0.1+0.2 -> 3/10. Aceita operações básicas, potências inteiras limitadas,
+fatoriais limitados e raízes quadradas de racionais quadrados perfeitos.
+A/B também apresenta radicais reais exatos a partir da expressão original:
+sqrt(2) -> √2; sqrt(8) -> 2√2; sqrt(8)*sqrt(5) -> 2√10;
+sqrt(5^2+7^2) -> √74; 1/sqrt(2) -> √2/2.
+Soma radicais semelhantes e racionaliza denominadores com um ou dois termos.
+Exemplos: sqrt(8)+sqrt(18) -> 5√2; 1/(1+sqrt(2)) -> -1+√2.
+Ans conserva a forma exata durante a sessão. O botão = do painel de funções
+calcula no modo calculadora e insere a igualdade nos campos de equações.
+Há limites explícitos: até oito termos radicais, operações e inteiros
+limitados e orçamento fixo de fatorização. Não é um motor simbólico geral.
+Radicais aninhados não redutíveis a uma raiz de racional, funções não
+suportadas e expressões demasiado grandes mantêm a apresentação decimal.
+Nos resultados das equações, a fração candidata é substituída nos dados
+originais e só é aceite se a igualdade for exata nesta verificação racional.
+Não apresenta (aprox.). Um resultado só muda para fração ou radical quando
+a forma exata é suportada; de outro modo permanece decimal.
+A apresentação decimal usa até 17 algarismos significativos. Um irracional
+não tem expansão decimal finita: o decimal continua a ser numérico.
+O motor numérico continua a usar ponto flutuante; a troca de apresentação
+não altera os valores internos. A prova racional de Ans mantém-se durante
+a sessão, incluindo suspensão, mas não é recuperada de sessões anteriores.
+Nas equações, a/b fica no topo; VOLTAR AOS TIPOS ocupa a largura inferior,
+abaixo de RESOLVER e VER GRÁFICO.
+
+CONTROLOS
+A ativa o botão selecionado; START confirma/calcula conforme o contexto.
+B apaga na edição e calculadora; nos painéis regressa ao nível anterior.
+D-pad navega nos botões; no gráfico desloca a janela. L/R fazem zoom.
+As setas do editor movem o cursor; as do TRACE percorrem os pontos.
+Y troca os ecrãs. L2+R2 limpa toda a memória matemática, incluindo funções,
+sombreados e equações, sem sair. O idioma mantém-se.
+JANELA edita limites X/Y e passo da tabela. Função seguinte muda F1–F6.
+POWER: um toque curto solicita suspensão do sistema, guardando primeiro os
+dados. Outro toque deve acordar a consola e a aplicação retoma a vista.
+A aplicação deteta as fontes de POWER separadamente do comando de jogo,
+permite a gestão de energia do firmware e usa os estados de suspensão
+expostos pelo kernel. Não simula standby apagando apenas os ecrãs.
+Se o firmware recusar a suspensão, regista o motivo no log único.
+A suspensão/retoma requer teste na RGDS+: não foi validada em hardware.
+
+ARRANQUE
+O menu é desenhado antes da inicialização do comando. As janelas são criadas
+logo em ecrã inteiro, evitando mudanças de modo extra. O desenho dos cantos
+arredondados foi otimizado. O log regista o tempo até ao primeiro ecrã.
+
+VALIDAÇÃO
+Testes matemáticos, navegação, PT/EN, limites e sobreposições dos botões,
+persistência e visualização verificados no computador. Binário ARM64 incluído.
+As funções novas devem ser confirmadas na consola.
+Código e testes em Sources; licença da fonte junto da aplicação.
+
+VERSÃO FINAL 2.5
+Inclui a apresentação exata de radicais e todas as alterações da versão 2.4.
+Testes de simplificação, racionalização, Ans e 5000 identidades com radicais
+incluídos em Sources/test-radicals.c. Código sem dependências simbólicas externas.
+
+LOGÓTIPO / LOGO
+APPS/Imgs/BaetaCalc.png — copie também Imgs para Roms/APPS.
+Copy Imgs into Roms/APPS as well. Preserve other applications' images.
