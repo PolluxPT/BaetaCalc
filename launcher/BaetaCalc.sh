@@ -3,7 +3,7 @@ set -u
 parent=$(CDPATH= cd -P "$(dirname "$0")" && pwd) || exit 1
 app="$parent/BaetaCalc"
 exec > "$app/BaetaCalc_Arranque.txt" 2>&1
-printf 'BaetaCalc 2.5 final for RGDS+\n'
+printf 'BaetaCalc 2.5.1 for RGDS+\n'
 export XDG_RUNTIME_DIR="${XDG_RUNTIME_DIR:-/var/run}"
 export WAYLAND_DISPLAY="${WAYLAND_DISPLAY:-wayland-0}"
 export SDL_VIDEODRIVER=wayland

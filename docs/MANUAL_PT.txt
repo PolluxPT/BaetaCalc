@@ -1,5 +1,5 @@
-BaetaCalc 2.5 final — RGDS+ — PT / EN
-18 de outubro de 2026
+BaetaCalc 2.5.1 — RGDS+ — PT / EN
+22 de outubro de 2026
 
 INSTALAÇÃO / ATUALIZAÇÃO
 Copie BaetaCalc.sh e a pasta BaetaCalc, de APPS, para Roms/APPS.
@@ -13,6 +13,8 @@ NOVA NAVEGAÇÃO
 A entrada tem IDIOMA, CALCULADORA, FUNÇÕES e RESOLVER EQUAÇÕES,
 com um botão SAIR pequeno no canto inferior direito.
 INÍCIO e SAIR mantêm a mesma posição nos ambientes de trabalho.
+Na primeira utilização, o idioma é inglês (EN). Use LANG: PT [EN] para mudar
+para português. As atualizações mantêm o idioma anteriormente guardado.
 SAIR pede confirmação. O idioma escolhido fica guardado.
 
 CALCULADORA
@@ -136,7 +138,7 @@ persistência e visualização verificados no computador. Binário ARM64 incluí
 As funções novas devem ser confirmadas na consola.
 Código e testes em Sources; licença da fonte junto da aplicação.
 
-VERSÃO FINAL 2.5
+VERSÃO 2.5.1
 Inclui a apresentação exata de radicais e todas as alterações da versão 2.4.
 Testes de simplificação, racionalização, Ans e 5000 identidades com radicais
 incluídos em Sources/test-radicals.c. Código sem dependências simbólicas externas.

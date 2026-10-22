@@ -12,10 +12,14 @@ Developed by Filipe Baeta. Menus are available in European Portuguese and Englis
 
 ![Exact square-root result](docs/images/calculator.png)
 
+On first launch, the application starts in **English (EN)**. Use the
+**LANG: PT [EN]** button on the home screen to switch to Portuguese. Your choice
+is saved and preserved across updates.
+
 ## Install
 
 1. Open **Releases** on this repository's page.
-2. Download **BaetaCalc_2_5_Final_PT_EN_RGDSPlus.zip** from the release assets.
+2. Download **BaetaCalc_2_5_1_PT_EN_RGDSPlus.zip** from the release assets.
    GitHub's automatic **Source code** archives do not contain an installable binary.
 3. Extract it and copy **BaetaCalc.sh** and the **BaetaCalc** folder from **APPS**
    to **Roms/APPS** on the games card.

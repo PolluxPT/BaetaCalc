@@ -1,5 +1,5 @@
-BaetaCalc 2.5 final — RGDS+ — PT / EN
-18 October 2026
+BaetaCalc 2.5.1 — RGDS+ — PT / EN
+22 October 2026
 
 INSTALL / UPDATE
 Copy BaetaCalc.sh and the BaetaCalc folder from APPS into Roms/APPS.
@@ -8,6 +8,8 @@ Existing state.txt, advanced.txt and language.txt are preserved; back them up.
 BaetaCalc_Arranque.txt stays inside BaetaCalc and is replaced at each launch.
 
 NAVIGATION
+First launch defaults to English (EN). Use LANG: PT [EN] to select Portuguese.
+Existing saved PT/EN preferences are preserved when updating.
 The home screen contains LANGUAGE, CALCULATOR, FUNCTIONS and EQUATIONS,
 plus a small EXIT button at the bottom right.
 HOME and EXIT stay in the same position in every working environment.
@@ -110,7 +112,7 @@ and rendered screens checked on a computer. ARM64 binary included.
 The redesigned navigation still needs testing on the console.
 Source and tests are in Sources; font license accompanies the application.
 
-FINAL RELEASE 2.5
+RELEASE 2.5.1
 Includes exact radicals and all changes from 2.4. Tests cover simplification,
 rationalization, Ans and 5000 radical identities. No external symbolic dependency.
 

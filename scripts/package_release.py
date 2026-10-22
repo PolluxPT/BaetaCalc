@@ -17,7 +17,7 @@ def arm64_elf(path):
 
 
 def add(archive, path, name, executable=False):
-    info = zipfile.ZipInfo(name, (2026, 10, 18, 0, 0, 0))
+    info = zipfile.ZipInfo(name, (2026, 10, 22, 0, 0, 0))
     info.create_system = 3
     info.external_attr = (0o100755 if executable else 0o100644) << 16
     info.compress_type = zipfile.ZIP_DEFLATED
@@ -32,7 +32,9 @@ def main():
     if not args.binary.is_file() or not arm64_elf(args.binary):
         parser.error('--binary must be a little-endian 64-bit ARM/aarch64 ELF')
     args.output_dir.mkdir(parents=True, exist_ok=True)
-    output = args.output_dir / 'BaetaCalc_2_5_Final_PT_EN_RGDSPlus.zip'
+    version = (ROOT / 'VERSION').read_text().strip()
+    version_slug = version.replace('.', '_')
+    output = args.output_dir / f'BaetaCalc_{version_slug}_PT_EN_RGDSPlus.zip'
     root_files = ['README.md', 'README_EN.md', 'LICENSE', 'THIRD_PARTY_NOTICES.md',
                   'CHANGELOG.md', 'CONTRIBUTING.md', 'LOGO_NOTICE.md', 'Makefile', 'VERSION',
                   '.gitignore', '.gitattributes']

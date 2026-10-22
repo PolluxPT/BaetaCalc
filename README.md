@@ -13,10 +13,14 @@ com menus em português de Portugal e inglês. Desenvolvida por Filipe Baeta.
 
 ![BaetaCalc: resultado exato √2](docs/images/calculator.png)
 
+Na primeira utilização, a aplicação arranca em **inglês (EN)**. Pode mudar para
+português no botão **LANG: PT [EN]**, no ecrã inicial. A escolha fica guardada;
+as atualizações respeitam o idioma anteriormente escolhido.
+
 ## Instalar na consola
 
 1. Abra **Releases**, na página deste repositório.
-2. Descarregue o ficheiro **BaetaCalc_2_5_Final_PT_EN_RGDSPlus.zip** dos anexos da Release.
+2. Descarregue o ficheiro **BaetaCalc_2_5_1_PT_EN_RGDSPlus.zip** dos anexos da Release.
    O ZIP automático **Source code** do GitHub contém o código, não a aplicação pronta.
 3. Extraia o ZIP e copie **BaetaCalc.sh** e a pasta **BaetaCalc**, que estão dentro
    de **APPS**, para **Roms/APPS** no cartão de jogos.

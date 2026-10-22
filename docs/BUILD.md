@@ -62,6 +62,10 @@ writes SHA256SUMS. It never includes build output, runtime state, logs or calibr
 
 ## Release provenance
 
+v2.5.1 is rebuilt from the updated source with Zig 0.15.2 targeting
+`aarch64-linux-gnu.2.34`; it does not reuse the v2.5.0 executable.
+
+
 The separately supplied v2.5.0 GitHub release asset reuses the executable from the
 original 2.5 Final archive without modification. The supplied logo, license files and this organized
 source/documentation tree have been added. The new Makefile was tested separately;

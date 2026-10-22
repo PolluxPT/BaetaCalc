@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.5.1 — 2026-10-22
+
+- Start in English on first launch or when the language preference is missing,
+  empty or invalid.
+- Preserve explicitly saved Portuguese and English preferences across updates.
+- Accept language files with LF, CRLF or no trailing newline.
+- Update language regression tests, manuals and versioned release packaging.
+
 ## 2.5.0 — first public package
 
 - European Portuguese / English interface and separate calculator, functions
