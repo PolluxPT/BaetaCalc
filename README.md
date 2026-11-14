@@ -6,7 +6,7 @@
 
 # Calculadora científica e gráfica para a RGDS+ com Linux Stock OS.
 
-[English](README_EN.md) · [Manual PT](docs/MANUAL_PT.txt) · [Compilação / Build](docs/BUILD.md) · [Licença MIT](LICENSE)
+[English](README_EN.md) · [Manual PT](docs/MANUAL_PT.txt) · [Compilação / Build](docs/BUILD.md)
 
 Calculadora normal e científica, gráficos com sombreado e resolução de equações,
 com menus em português de Portugal e inglês. Desenvolvida por Filipe Baeta.
