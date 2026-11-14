@@ -93,5 +93,9 @@ junte o log `BaetaCalc_Arranque.txt` depois de verificar o conteúdo.
 
 ## Licença
 
-Código original e documentação: [MIT](LICENSE), © 2026 Filipe Baeta.
+## Licença
+
+Código original e documentação: [PolyForm Noncommercial 1.0.0](LICENSE), © 2026 Filipe Baeta. O uso é permitido apenas para fins não comerciais e pessoais. Para licenciamento comercial, contacte o autor através do [perfil do GitHub](https://github.com/PolluxPT).
+
 Logótipo: [aviso próprio](LOGO_NOTICE.md). A fonte tem licença própria: [avisos de terceiros](THIRD_PARTY_NOTICES.md).
+
