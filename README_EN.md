@@ -6,7 +6,7 @@
 
 **Scientific and graphing calculator for the RGDS+ running Linux Stock OS.**
 
-[Português](README.md) · [English manual](docs/MANUAL_EN.txt) · [Build](docs/BUILD.md) · [MIT license](LICENSE)
+[Português](README.md) · [English manual](docs/MANUAL_EN.txt) · [Build](docs/BUILD.md)
 
 Developed by Filipe Baeta. Menus are available in European Portuguese and English.
 
@@ -77,5 +77,9 @@ test examples, not console photographs.
 For an Issue, include console, firmware, application version and reproduction steps.
 Check the contents of `BaetaCalc_Arranque.txt` before attaching it.
 
-Original code/docs: [MIT](LICENSE), © 2026 Filipe Baeta.
-Logo: [separate notice](LOGO_NOTICE.md). Font and dependencies: [third-party notices](THIRD_PARTY_NOTICES.md).
+## License
+
+Original code and documentation: [PolyForm Noncommercial 1.0.0](LICENSE), © 2026 Filipe Baeta. Use is permitted for noncommercial and personal purposes only. For commercial licensing inquiries, please contact the author via [GitHub](https://github.com/PolluxPT).
+
+Logo: [separate notice](LOGO_NOTICE.md). The font has its own license: [third-party notices](THIRD_PARTY_NOTICES.md).
+
