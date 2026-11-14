@@ -79,7 +79,7 @@ Check the contents of `BaetaCalc_Arranque.txt` before attaching it.
 
 ## License
 
-Original code and documentation: [PolyForm Noncommercial 1.0.0](LICENSE), © 2026 Filipe Baeta. Use is permitted for noncommercial and personal purposes only. For commercial licensing inquiries, please contact the author via [GitHub](https://github.com/PolluxPT).
+Original code and documentation by Filipe Baeta are available under the [PolyForm Noncommercial 1.0.0](LICENSE), for the purposes permitted by the license. Versions v2.5.0 and v2.5.1 were released under MIT. For commercial licensing of the original material, contact the [author](https://github.com/PolluxPT).
 
 Logo: [separate notice](LOGO_NOTICE.md). The font has its own license: [third-party notices](THIRD_PARTY_NOTICES.md).
 

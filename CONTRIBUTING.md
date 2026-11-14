@@ -10,4 +10,4 @@ numerical limits. New hardware behavior needs explicit on-console testing;
 passing desktop tests is not proof of firmware compatibility.
 
 Code and documentation contributions are intended to be distributed under the
-project's MIT license. Preserve third-party notices.
+project's [PolyForm Noncommercial 1.0.0 license](LICENSE). Preserve third-party notices.

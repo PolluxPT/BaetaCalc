@@ -5,6 +5,8 @@ Não precisa de instalar Git nem usar comandos. O pacote exterior contém:
 - **REPOSITORIO**: o conteúdo a carregar na página do código.
 - **PARA_RELEASE**: o ZIP de instalação e SHA256SUMS para anexar à Release.
 
+> As instruções de publicação abaixo descrevem o pacote histórico v2.5.0.
+
 ## 1. Criar o repositório
 
 1. Entre na sua conta em https://github.com.
@@ -55,15 +57,16 @@ O pacote contém menos de 100 ficheiros no repositório; cada ficheiro é inferi
 - Use Issues para receber problemas. Não publique logs ou configurações pessoais
   sem os rever.
 
-## Licença escolhida
+## Licença
 
-Foi preparada a licença MIT para o código original em nome de Filipe Baeta.
-Permite utilização, modificação e redistribuição, incluindo comercial, conservando
-os avisos de copyright e licença. A fonte continua com a licença própria.
-A licença está no pacote para poder ser revista antes da publicação.
+As versões v2.5.0 e v2.5.1 foram publicadas sob MIT. Na versão atual do
+repositório, o material original está sob [PolyForm Noncommercial 1.0.0](../LICENSE).
+A fonte mantém a licença própria. Consulte os [avisos de terceiros](../THIRD_PARTY_NOTICES.md)
+sobre a proveniência do ficheiro auxiliar de SDL antes de publicar uma compilação nova.
 
 ## Documentação oficial consultada
 
 - Upload: https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository
 - Releases: https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository
 - MIT: https://opensource.org/license/mit
+- PolyForm: https://polyformproject.org/licenses/noncommercial/1.0.0/
